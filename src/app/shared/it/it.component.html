@@ -1,0 +1,80 @@
+<div class="row">
+  <div class="d-none d-md-block col-md-4 col-lg-2 pe-0 tooglesideBarMenu">
+    <app-sidebar></app-sidebar>
+  </div>
+  <div class="col-12 col-md-8 col-lg-10 ps-0 headerToggle">
+    <app-header></app-header>
+    <div class="dashboard-main-content">
+      <div class="header-main-dashboard" style="overflow-y: auto">
+        <div class="dashboard-table-data row gap-0">
+          <div class="col-12 col-md-6 g-2">
+            <div class="top-area-table h-100">
+              <div class="title">
+                <p>Top Critical Info</p>
+              </div>
+              <div class="border-divider"></div>
+              <div class="tabel-Data mt-1" style="overflow-x: auto">
+                <table class="w-100">
+                  <tr class="d-flex justify-content-between divider">
+                    <th>Data</th>
+                    <th>Score</th>
+                    <th>Status</th>
+                  </tr>
+                  <tr
+                    class="d-flex justify-content-between divider"
+                    *ngFor="let Data of getCategoryArray; let i = index"
+                  >
+                    <th class="td-Data">{{ Data | titlecase }}</th>
+                    <th class="td-Data">{{ getScore[i] }}</th>
+                    <th class="td-Data">
+                      <button *ngIf="i == 0 || i == 2" class="critical">
+                        {{
+                          i == 0 ? getSeverityButton[i] : getSeverityButton[0]
+                        }}
+                      </button>
+                      <button *ngIf="i != 0 && i != 2" class="high">
+                        {{ getSeverityButton[i] }}
+                      </button>
+                    </th>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 g-2">
+            <div class="top-area-table h-100">
+              <div class="title">
+                <p>Units Report</p>
+              </div>
+
+              <div class="border-divider"></div>
+
+              <div class="tabel-Data mt-1" style="overflow-x: auto">
+                <table class="w-100">
+                  <tr class="d-flex justify-content-between divider">
+                    <th>Unit/Sub unit</th>
+                    <th style="margin-left: -14px">2021</th>
+                    <th>2022</th>
+                    <th>2023</th>
+                  </tr>
+                  <tr
+                    class="d-flex justify-content-between divider"
+                    *ngFor="let Data of getUnitsArray; let i = index"
+                  >
+                    <th class="td-Data">{{ Data }}</th>
+                    <th class="td-Data marginLeft ms-4" *ngIf="getScore[i]">
+                      {{ getScore[i] }}
+                    </th>
+                    <th class="td-Data marginLeft ms-2">{{ getScore[i] }}</th>
+                    <th class="td-Data">{{ getScore[i] }}</th>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <router-outlet></router-outlet>
+  </div>
+</div>
