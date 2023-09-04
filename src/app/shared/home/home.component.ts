@@ -1,3 +1,11 @@
+/*
+#############################################################################
+# Name : home.component.ts
+# Created by : Arvind Yadav
+# Date       : 1st Sept 2023
+# Purpose    : This file is used to design the implement the home section file
+#############################################################################
+*/
 import { Component } from '@angular/core';
 import { HeaderComponent } from '../header/header.component';
 import { ToggleService } from 'src/app/services/toggle.service';

@@ -1,3 +1,11 @@
+/*
+#############################################################################
+# Name : main.component.ts
+# Created by : Arvind Yadav
+# Date       : 2nd Sept 2023
+# Purpose    : This file is used to provide main component file details and packages
+#############################################################################
+*/
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ToggleService } from '../../../services/toggle.service';
 import { ChartConfiguration, ChartData, ChartEvent, ChartOptions, ChartType } from 'chart.js';

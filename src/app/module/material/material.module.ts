@@ -1,3 +1,11 @@
+/*
+#############################################################################
+# Name : material.module.ts
+# Created by : Arvind Yadav
+# Date       : 2nd Sept 2023
+# Purpose    : This file is used to provide material file access
+#############################################################################
+*/
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 

@@ -1,5 +1,12 @@
-import { Component, Injectable } from '@angular/core';
-import { HomeComponent } from '../home/home.component';
+/*
+#############################################################################
+# Name : header.component.ts
+# Created by : Arvind Yadav
+# Date       : 1st Sept 2023
+# Purpose    : This file is used to design the implement the header section file
+#############################################################################
+*/
+import { Component } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
 import { ToggleService } from 'src/app/services/toggle.service';
@@ -11,8 +18,7 @@ import { ToggleService } from 'src/app/services/toggle.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  constructor( private serv:ToggleService , private _snackBar: MatSnackBar ,
-     private Router:Router) {};
+  constructor( private serv:ToggleService , private _snackBar: MatSnackBar , private Router:Router) {};
   ngOnInit(){
     console.log();
     

@@ -1,3 +1,11 @@
+/*
+#############################################################################
+# Name : ot.component.ts
+# Created by : Arvind Yadav
+# Date       : 1st Sept 2023
+# Purpose    : This file is used to design the implement the ot section file
+#############################################################################
+*/
 import { Component } from '@angular/core';
 import { ChartConfiguration, ChartData, ChartEvent, ChartOptions, ChartType } from 'chart.js';
 

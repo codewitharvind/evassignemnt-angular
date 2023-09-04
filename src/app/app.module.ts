@@ -1,3 +1,11 @@
+/*
+#############################################################################
+# Name : app.module.ts
+# Created by : Arvind Yadav
+# Date       : 31st Aug 2023
+# Purpose    : This file is used to provide package details, import and export packages and libraries
+#############################################################################
+*/
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
@@ -20,8 +28,8 @@ import { SettingsComponent } from './shared/settings/settings.component';
     AppComponent,
     HomeComponent,
     SidebarComponent,
-    MainComponent,
     HeaderComponent,
+    MainComponent,
     ItComponent,
     OtComponent,
     SettingsComponent,
@@ -36,7 +44,7 @@ import { SettingsComponent } from './shared/settings/settings.component';
     HttpClientModule,
     NgChartsModule
   ],
-  providers: [HomeComponent, HeaderComponent],
+  providers: [HeaderComponent, HomeComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

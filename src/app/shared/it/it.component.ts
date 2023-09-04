@@ -1,3 +1,11 @@
+/*
+#############################################################################
+# Name : it.component.css
+# Created by : Arvind Yadav
+# Date       : 1st Sept 2023
+# Purpose    : This file is used to design the implement the it section file
+#############################################################################
+*/
 import { Component } from '@angular/core';
 import { DataService } from 'src/app/services/data.service';
 

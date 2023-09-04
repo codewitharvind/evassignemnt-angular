@@ -1,5 +1,12 @@
+/*
+#############################################################################
+# Name : sidebar.component.css
+# Created by : Arvind Yadav
+# Date       : 1st Sept 2023
+# Purpose    : This file is used to design the sidebar section css
+#############################################################################
+*/
 .main-sidebar {
-
     padding: 10px;
     background: linear-gradient(0deg, #FFF 0%, #FFF 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.05) 100%), #EEF7FF;
     box-shadow: -1px 0px 0px 0px rgba(139, 141, 161, 0.10) inset;
